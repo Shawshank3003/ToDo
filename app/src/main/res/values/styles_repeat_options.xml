@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AddTaskRepeatOptionsPopupScrollViewLayout" parent="AppLayout">
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="AddTaskRepeatOptionsPopupOptionsTableRowLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:weightSum">6</item>
+    </style>
+
+    <style name="AddTaskTableRowOptionsPopupMiniButton" parent="AppButtonTheme">
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="AddTaskRepeatOptionsPopupTextView">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="AddTaskRepeatOptionsPopupWheelLayout" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:layout_height">75dp</item>
+    </style>
+
+    <style name="AddTaskRepeatOptionsPopupWeekdayToggleButtonFirst" parent="AppToggleButtonTheme">
+        <item name="android:layout_weight">1.1</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textOff"></item>
+        <item name="android:textOn"></item>
+    </style>
+
+    <style name="AddTaskRepeatOptionsPopupWeekdayToggleButtonSecond" parent="AddTaskRepeatOptionsPopupWeekdayToggleButtonFirst">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="AddTaskRepeatOptionsPopupButton" parent="AppButtonTheme">
+        <item name="android:layout_weight">1.9</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+</resources>

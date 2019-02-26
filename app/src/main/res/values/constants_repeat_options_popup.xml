@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--RadioGroup options-->
+    <string name="repeat_options_popup_day">Day</string>
+    <string name="repeat_options_popup_week">Week</string>
+    <string name="repeat_options_popup_month">Month</string>
+    <string name="repeat_options_popup_year">Year</string>
+    <string name="repeat_options_popup_none">None</string>
+
+    <!--Wheel Values-->
+    <string name="in_every">In Every</string>
+    <string name="on">On</string>
+    <string name="add">and</string>
+    <string name="days">Day(s)</string>
+    <string name="weeks">Week(s)</string>
+    <string name="months">Month(s)</string>
+    <string name="years">Year(s)</string>
+
+    <!--WeekDays options-->
+    <string name="Mon">Mon</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="task_name_hint">Enter task here</string>
+    <string name="task_due_date">Due Date</string>
+    <string name="task_due_datet_hint">No Date set</string>
+    <string name="task_due_time">Due Time</string>
+    <string name="task_due_time_hint">No time set</string>
+    <string name="task_repeat">Repeat</string>
+    <string name="task_repeat_hint">Repeats</string>
+    <string name="repeat_options_daily">Daily</string>
+    <string name="repeat_options_weekdays">M-F</string>
+    <string name="repeat_options_weekly">Weekly</string>
+    <string name="repeat_options_monthly">Monthly</string>
+    <string name="repeat_options_yearly">Yearly</string>
+    <string name="repeat_options_custom">Custom</string>
+</resources>

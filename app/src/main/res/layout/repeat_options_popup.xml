@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView style="@style/AddTaskRepeatOptionsPopupScrollViewLayout">
+        <TableLayout style="@style/AppLayout"  android:stretchColumns="*" >
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupOptions"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout">
+                <Button
+                    android:id="@+id/btnAddTaskRepeatOptionsPopupDaily"
+                    android:layout_marginLeft="0dp"
+                    style="@style/AddTaskTableRowOptionsPopupMiniButton"
+                    android:onClick="onDailyBtnClicked"
+                    android:text="@string/repeat_options_popup_day" />
+                <Button
+                    android:id="@+id/btnAddTaskRepeatOptionsPopupWeekly"
+                    android:onClick="onWeeklyBtnClicked"
+                    style="@style/AddTaskTableRowOptionsPopupMiniButton"
+                    android:text="@string/repeat_options_popup_week" />
+                <Button
+                    android:id="@+id/btnAddTaskRepeatOptionsPopupMonthly"
+                    android:onClick="onMonthlyBtnClicked"
+                    style="@style/AddTaskTableRowOptionsPopupMiniButton"
+                    android:text="@string/repeat_options_popup_month" />
+                <Button
+                    android:id="@+id/btnAddTaskRepeatOptionsPopupYearly"
+                    android:onClick="onYearlyBtnClicked"
+                    style="@style/AddTaskTableRowOptionsPopupMiniButton"
+                    android:text="@string/repeat_options_popup_year" />
+            </TableRow>
+
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupWeekFirstToggleButton"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout"
+                android:layout_marginBottom="2dp">
+                <ToggleButton
+                    style="@style/AddTaskRepeatOptionsPopupWeekdayToggleButtonFirst"
+                    android:text="@string/Mon" />
+                <ToggleButton
+                    style="@style/AddTaskRepeatOptionsPopupWeekdayToggleButtonFirst"
+                    android:text="@string/Tue" />
+                <ToggleButton
+                    style="@style/AddTaskRepeatOptionsPopupWeekdayToggleButtonFirst"
+                    android:text="@string/Wed" />
+                <ToggleButton
+                    style="@style/AddTaskRepeatOptionsPopupWeekdayToggleButtonFirst"
+                    android:text="@string/Thu" />
+                <ToggleButton
+                    style="@style/AddTaskRepeatOptionsPopupWeekdayToggleButtonSecond"
+                    android:text="@string/Fri" />
+            </TableRow>
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupWeekSecondToggleButton"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout"
+                android:layout_marginTop="2dp" android:layout_marginBottom="0dp" android:gravity="left">
+                <ToggleButton
+                    style="@style/AddTaskRepeatOptionsPopupWeekdayToggleButtonSecond"
+                    android:text="@string/Sat" />
+                <ToggleButton
+                    style="@style/AddTaskRepeatOptionsPopupWeekdayToggleButtonSecond"
+                    android:text="@string/Sun" />
+            </TableRow>
+
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupMonthFirstToggleButton"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout" android:visibility="gone">
+
+            </TableRow>
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupMonthSecondToggleButton"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout" android:visibility="gone">
+
+            </TableRow>
+
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupYearFirstToggleButton"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout" android:visibility="gone">
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wp_year_date"
+                    style="@style/AddTaskRepeatOptionsPopupWheelLayout"
+                    android:layout_weight="1"
+                    app:wheel_visible_item_count="3"
+                    app:wheel_item_text_color="@color/colorWheelLightGrey"
+                    app:wheel_selected_item_text_color="@color/colorBlack"
+                    app:wheel_item_text_size="18dp"
+                    app:wheel_cyclic="true"
+                    />
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wp_year_day"
+                    style="@style/AddTaskRepeatOptionsPopupWheelLayout"
+                    android:layout_weight="2.5"
+                    android:layout_marginLeft="20dp"
+                    app:wheel_visible_item_count="3"
+                    app:wheel_item_text_color="@color/colorWheelLightGrey"
+                    app:wheel_selected_item_text_color="@color/colorBlack"
+                    app:wheel_item_text_size="18dp"
+                    app:wheel_cyclic="true"
+                    />
+
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wp_year_year"
+                    style="@style/AddTaskRepeatOptionsPopupWheelLayout"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2.5"
+                    app:wheel_visible_item_count="3"
+                    app:wheel_item_text_color="@color/colorWheelLightGrey"
+                    app:wheel_selected_item_text_color="@color/colorBlack"
+                    app:wheel_item_text_size="18dp"
+                    app:wheel_cyclic="true"
+                    />
+
+            </TableRow>
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupYearSecondToggleButton"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout" android:visibility="gone">
+
+                <TextView
+                    style="@style/AddTaskRepeatOptionsPopupTextView"
+                    android:id="@+id/tvAddTaskRepeatOptionsPopupOn"
+                    android:layout_weight="0.5"
+                    android:textSize="15dp"
+                    android:text="@string/on"/>
+
+                <TextView
+                    style="@style/AddTaskRepeatOptionsPopupTextView"
+                    android:id="@+id/tvYearSummary"
+                    android:text="4th wednesday in december"
+                    android:layout_weight="5"
+                    android:textSize="15dp" />
+
+                <ImageButton
+                    style="@style/AddTaskTableRowImageButton"
+                    android:id="@+id/imgBtnAddYearRepeatDelete"
+                    android:background="@drawable/imagebutton_transparent"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/add_black"
+                    android:onClick="onImgBtnAddTaskDueDateCancelClicked"/>
+
+            </TableRow>
+
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupOnEvery"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout">
+                <TextView
+                    style="@style/AddTaskRepeatOptionsPopupTextView"
+                    android:layout_weight="2.5"
+                    android:text="@string/in_every"/>
+                <com.aigestudio.wheelpicker.WheelPicker
+                    android:id="@+id/wpOnEvery"
+                    style="@style/AddTaskRepeatOptionsPopupWheelLayout"
+                    app:wheel_visible_item_count="3"
+                    app:wheel_item_text_color="@color/colorWheelLightGrey"
+                    app:wheel_selected_item_text_color="@color/colorBlack"
+                    app:wheel_item_text_size="18dp"/>
+                <TextView
+                    style="@style/AddTaskRepeatOptionsPopupTextView"
+                    android:id="@+id/tvAddTaskRepeatOptionsPopupOnEverySufix"
+                    android:layout_weight="2.4"
+                    android:gravity="center"
+                    android:text="@string/days"/>
+            </TableRow>
+
+            <TableRow android:id="@+id/trAddTaskRepeatOptionsPopupOkCancelClear"
+                android:layout_marginTop="0dp"
+                style="@style/AddTaskRepeatOptionsPopupOptionsTableRowLayout">
+                <Button
+                    android:id="@+id/btnPopupCancel"
+                    style="@style/AddTaskRepeatOptionsPopupButton"
+                    android:text="@string/cancel"/>
+                <Button
+                    android:id="@+id/btnPopupOK"
+                    style="@style/AddTaskRepeatOptionsPopupButton"
+                    android:text="@string/ok"/>
+                <Button
+                    android:id="@+id/btnPopupClear"
+                    style="@style/AddTaskRepeatOptionsPopupButton"
+                    android:text="@string/clear"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

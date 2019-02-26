@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TableLayout style="@style/AppLayout">
+
+        <TableRow style="@style/AddTaskTableRowLayout" android:id="@+id/trTaskDescription">
+
+            <EditText
+                style="@style/AddTaskTableRowEditText"
+                android:id="@+id/eidtTxtAddTaskTaskName"
+                android:layout_weight="5"
+                android:hint="@string/task_name_hint"
+                android:inputType="textMultiLine" />
+
+            <ImageButton
+                style="@style/AddTaskTableRowImageButton"
+                android:id="@+id/imgBtnAddTaskPriority"
+                android:background="@drawable/imagebutton_transparent"
+                android:src="@drawable/high_priority_light"
+                android:onClick="onImgBtnAddTaskPriorityClicked"
+                android:tag="@string/light"
+                />
+
+        </TableRow>
+
+        <TableRow style="@style/AddTaskTableRowLayout"  android:id="@+id/trTaskDueDate">
+
+            <TextView
+                style="@style/AddTaskTableRowTextView"
+                android:id="@+id/tvAddTaskDueDate"
+                android:text="@string/task_due_date"/>
+
+            <EditText
+                style="@style/AddTaskTableRowEditText"
+                android:id="@+id/editTxtAddTaskDate"
+                android:textSize="17dp"
+                android:focusable="false"
+                android:hint="@string/task_due_datet_hint"
+                android:onClick="showDatePickerDialog" />
+
+            <ImageButton
+                style="@style/AddTaskTableRowImageButton"
+                android:id="@+id/imgBtnAddTaskDueDateDelete"
+                android:background="@drawable/imagebutton_transparent"
+                android:src="@drawable/delete_light"
+                android:onClick="onImgBtnAddTaskDueDateCancelClicked"/>
+
+        </TableRow>
+
+        <TableRow style="@style/AddTaskTableRowLayout" android:id="@+id/trTaskDueTime"  android:visibility="gone">
+
+            <TextView
+                style="@style/AddTaskTableRowTextView"
+                android:id="@+id/tvAddTaskDueTime"
+                android:text="@string/task_due_time"/>
+
+            <EditText
+                style="@style/AddTaskTableRowEditText"
+                android:id="@+id/editTxtAddTaskTime"
+                android:focusable="false"
+                android:textSize="17dp"
+                android:hint= "@string/task_due_time_hint"
+                android:onClick="showTimePickerDialog" />
+
+            <ImageButton
+                style="@style/AddTaskTableRowImageButton"
+                android:id="@+id/imgBtnAddTaskDueTimeDelete"
+                android:src="@drawable/delete_light"
+                android:background="@drawable/imagebutton_transparent"
+                android:onClick="onImgBtnAddTaskDueTimeCancelClicked"
+                android:tag="@string/light"/>
+
+        </TableRow>
+
+        <TableRow style="@style/AddTaskTableRowLayout"  android:id="@+id/trTaskRepeatFirst" android:visibility="gone">
+            <TextView
+                style="@style/AddTaskTableRowTextView"
+                android:id="@+id/tvAddTaskRepeat"
+                android:layout_weight="2"
+                android:focusable="false"
+                android:text="@string/task_repeat_hint"/>
+            <TextView
+                style="@style/AddTaskTableRowTextView"
+                android:id="@+id/tvAddTaskRepeatStatus"
+                android:textSize="12dp"
+                android:layout_weight="4"
+                android:focusable="false"/>
+        </TableRow>
+
+        <TableRow style="@style/AddTaskTableRowLayout"  android:id="@+id/trTaskRepeatSecond" android:visibility="gone">
+            <RadioGroup android:id="@+id/tgTaskRepeatOptions"
+                 style="@style/AddTaskTableRowRadioGropup">
+                <ToggleButton
+                    android:id="@+id/tbAddTaskRepeatDaily"
+                    style="@style/AddTaskTableRowMiniToggleButton"
+                    android:onClick="onToggle"
+                    android:text="@string/repeat_options_daily" />
+                <ToggleButton
+                    android:id="@+id/tbAddTaskRepeatWeekDay"
+                    android:onClick="onToggle"
+                    style="@style/AddTaskTableRowMiniToggleButton"
+                    android:text="@string/repeat_options_weekdays" />
+                <ToggleButton
+                    android:id="@+id/tbAddTaskRepeatWeekly"
+                    android:onClick="onToggle"
+                    style="@style/AddTaskTableRowMiniToggleButton"
+                    android:text="@string/repeat_options_weekly" />
+                <ToggleButton
+                    android:id="@+id/tbAddTaskRepeatMonthly"
+                    android:onClick="onToggle"
+                    style="@style/AddTaskTableRowMiniToggleButton"
+                    android:text="@string/repeat_options_monthly" />
+                <ToggleButton
+                    android:id="@+id/tbAddTaskRepeatYearly"
+                    android:onClick="onToggle"
+                    style="@style/AddTaskTableRowMiniToggleButton"
+                    android:text="@string/repeat_options_yearly" />
+                <ToggleButton
+                    android:id="@+id/tbAddTaskRepeatMore"
+                    android:onClick="onToggle"
+                    style="@style/AddTaskTableRowMiniToggleButton"
+                    android:text="@string/repeat_options_custom" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow style="@style/AddTaskTableRowLayout" android:id="@+id/trAddTaskOk">
+            <Button
+                android:id="@+id/btnOK"
+                style="@style/AddTaskTableRowButton"
+                android:onClick="onSaveBtnClicked"
+                android:text="@string/save"/>
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

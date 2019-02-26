@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--region Black Theme Starts -->
+
+    <style name="AppMenuBlackTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+    </style>
+
+    <style name="AppPopupOverlayBlackTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="AppBlackTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorBlack</item>
+        <item name="colorControlHighlight">@color/colorBlack</item>
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorMidGrey</item>
+    </style>
+
+    <style name="AppDialogBlackTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorBlack</item>
+    </style>
+
+    <style name="AppControlsBlackTheme">
+        <item name="backgroundTint">@color/colorBlack</item>
+    </style>
+
+    <style name="AppToggleButtonBlackTheme">
+        <item name="android:textColor">@drawable/toggle_grey</item>
+        <item name="android:background">@drawable/minitogglebutton_grey</item>
+    </style>
+
+    <style name="AppButtonBlackTheme">
+        <item name="android:background">@drawable/button_grey</item>
+    </style>
+
+    <!--endregion Black Theme Ends -->
+
+    <!--region Blue Theme Starts -->
+
+    <style name="AppMenuBlueTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+    </style>
+
+    <style name="AppPopupOverlayBlueTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="AppBlueTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorDarkBlue</item>
+        <item name="colorControlActivated">@color/colorDarkBlue</item>
+        <item name="colorControlHighlight">@color/colorDarkBlue</item>
+        <item name="colorPrimary">@color/colorDarkBlue</item>
+        <item name="colorPrimaryDark">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="AppDialogBlueTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="AppControlsBlueTheme">
+        <item name="backgroundTint">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="AppToggleButtonBlueTheme">
+        <item name="android:textColor">@drawable/toggle_blue</item>
+        <item name="android:background">@drawable/minitogglebutton_blue</item>
+    </style>
+
+    <style name="AppButtonBlueTheme">
+        <item name="android:background">@drawable/button_blue</item>
+    </style>
+
+    <!-- endregion Blue Theme Ends -->
+
+    <!--region App Generic Theme Starts -->
+
+    <style name="AppMenuTheme" parent="AppMenuBlueTheme" >
+    </style>
+
+    <style name="AppTheme" parent="AppBlueTheme">
+    </style>
+
+    <style name="AppDialogTheme" parent="AppDialogBlueTheme">
+    </style>
+
+    <style name="AppLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="AppPopupOverlayTheme" parent="AppPopupOverlayBlueTheme">
+    </style>
+
+    <style name="AppControlsTheme" parent="AppControlsBlueTheme">
+    </style>
+
+    <style name="AppToggleButtonTheme" parent="AppToggleButtonBlueTheme">
+    </style>
+
+    <style name="AppButtonTheme" parent="AppButtonBlueTheme">
+    </style>
+
+    <!--endregion App Generic Theme Ends -->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

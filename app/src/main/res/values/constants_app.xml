@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">To Do</string>
+    <string name="light">light</string>
+    <string name="dark">dark</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    <string name="action_settings">Settings</string>
+</resources>
